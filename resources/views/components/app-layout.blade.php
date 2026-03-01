@@ -28,6 +28,7 @@
             animation: float 4s ease-in-out infinite;
         }
     </style>
+    @stack('styles')
 </head>
 
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden flex flex-col min-h-screen">
@@ -228,6 +229,7 @@
 
         logoContainer.style.opacity = '1';
     </script>
+    @stack('scripts')
 </body>
 
 </html>

@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
 
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
-            <h3 class="text-xl font-bold text-white mb-4">Uns Survival</h3>
+            <h3 class="text-xl font-bold text-white mb-4">Unsurvival</h3>
             <p class="text-sm leading-relaxed max-w-xs">
                 Tu aventura de supervivencia definitiva. Construye tu legado, defiende tu territorio y forma parte de
                 una comunidad increíble.
