@@ -19,7 +19,7 @@
 
         <ul id="nav-links"
             class="hidden absolute bottom-full mb-2 left-4 right-4 rounded-2xl bg-gray-900/95 backdrop-blur-md flex-col items-center py-8 gap-8 md:text-base md:static md:bg-transparent md:backdrop-blur-none md:flex md:flex-row md:w-auto md:py-0 md:gap-10 md:mt-0 md:mb-0 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-40">
-            <li><a href="{{ route('home') }}"
+            <li><a href="{{ route('home') }}#main-content"
                     class="nav-link font-semibold transition-colors duration-200 block px-4 py-2 transform-gpu backface-hidden {{ request()->routeIs('home') ? 'text-white' : 'text-white/60 hover:text-white' }}">Inicio</a>
             </li>
             <li><a href="{{ route('services') }}"

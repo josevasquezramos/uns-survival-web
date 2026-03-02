@@ -27,6 +27,34 @@
         .animate-float {
             animation: float 4s ease-in-out infinite;
         }
+
+        @keyframes colorCycle {
+
+            0%,
+            100% {
+                color: #fff3a3;
+                text-shadow: 0 0 14px rgba(255, 230, 120, 0.95);
+            }
+
+            25% {
+                color: #8fd3ff;
+                text-shadow: 0 0 14px rgba(120, 200, 255, 0.95);
+            }
+
+            50% {
+                color: #a8ffcf;
+                text-shadow: 0 0 14px rgba(120, 255, 190, 0.95);
+            }
+
+            75% {
+                color: #ffb3e6;
+                text-shadow: 0 0 14px rgba(255, 150, 220, 0.95);
+            }
+        }
+
+        .animate-color-cycle {
+            animation: colorCycle 3s infinite alternate;
+        }
     </style>
     @stack('styles')
 </head>
@@ -49,8 +77,12 @@
                 class="relative z-10 flex flex-col items-center justify-end pb-32 md:pb-40 h-full text-white text-center px-6 md:px-12">
 
                 <h1
-                    class="text-3xl md:text-5xl font-bold tracking-tight animate-float drop-shadow-xl [text-shadow:_0_4px_8px_rgba(0,0,0,0.5)]">
-                    ¡Bienvenido a Servidor Survival de la Uns!
+                    class="text-3xl md:text-5xl font-bold tracking-tight animate-float drop-shadow-xl [text-shadow:_0_4px_8px_rgba(0,0,0,0.5)] flex flex-col items-center gap-2">
+                    <span>¡Gran Inauguración!</span>
+
+                    <span class="flex items-center gap-2 md:gap-3 text-4xl md:text-6xl mt-2">
+                        <span class="animate-color-cycle font-black transform">Sábado 7 de Marzo</span>
+                    </span>
                 </h1>
 
                 <div
@@ -66,9 +98,9 @@
                     </button>
                 </div>
 
-                <p class="mt-2 text-lg md:text-xl max-w-2xl drop-shadow-md [text-shadow:_0_2px_4px_rgba(0,0,0,0.8)]">
-                    Un mundo donde la supervivencia es solo el comienzo. Explora, construye, protege tu territorio y
-                    progresa junto a una comunidad activa y competitiva. Cada logro cuenta, cada aventura deja huella.
+                <p
+                    class="mt-4 text-lg md:text-xl max-w-2xl text-gray-200 drop-shadow-md [text-shadow:_0_2px_4px_rgba(0,0,0,0.8)]">
+                    Prepárate para un mundo donde la supervivencia es solo el comienzo.
                 </p>
             </div>
         </header>
@@ -76,7 +108,7 @@
 
     <x-navbar />
 
-    <main class="relative z-10 bg-gray-50 flex-grow {{ !request()->routeIs('home') ? 'pt-10' : '' }}">
+    <main class="relative z-10 bg-gray-50 flex-grow {{ !request()->routeIs('home') ? 'pt-10' : '' }}" id="main-content">
         {{ $slot }}
     </main>
 

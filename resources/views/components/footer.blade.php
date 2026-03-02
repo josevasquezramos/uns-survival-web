@@ -12,7 +12,7 @@
         <div class="flex flex-col items-center md:items-start">
             <h3 class="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
             <ul class="space-y-2 text-sm text-center md:text-left">
-                <li><a href="{{ route('home') }}" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
+                <li><a href="{{ route('home') }}#main-content" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
                 <li><a href="{{ route('services') }}" class="hover:text-indigo-400 transition-colors">Servicios /
                         Tienda</a></li>
                 <li><a href="#" class="hover:text-indigo-400 transition-colors">Reglas del Servidor</a></li>
@@ -25,20 +25,20 @@
                 Únete a nuestra comunidad para soporte y enterarte de las últimas novedades.
             </p>
             <div class="flex space-x-5 mt-2">
-                <a href="#" class="text-gray-400 hover:text-indigo-500 transition-colors"
-                    title="Únete a nuestro Discord">
+                <a href="https://discord.gg/uUMM4qmEV" class="text-gray-400 hover:text-indigo-500 transition-colors"
+                    title="Únete a nuestro Discord" target="_blank">
                     <x-fab-discord class="w-7 h-7" />
                 </a>
 
-                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors"
-                    title="Contáctanos por WhatsApp">
+                <a href="https://chat.whatsapp.com/EOuxpugAfOB3qojz11Kqxz?mode=gi_t" class="text-gray-400 hover:text-green-500 transition-colors"
+                    title="Contáctanos por WhatsApp" target="_blank">
                     <x-fab-whatsapp class="w-7 h-7" />
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="bg-gray-950 py-4">
+    <div class="bg-gray-950 py-10">
         <div class="max-w-7xl mx-auto px-6 md:px-12 text-center text-xs text-gray-500">
             &copy; {{ date('Y') }} Unsurvival. Todos los derechos reservados.
         </div>
