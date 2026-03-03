@@ -1,5 +1,6 @@
 <nav id="main-nav"
     class="sticky top-0 z-50 w-full h-20 {{ request()->routeIs('home') ? '-mt-20' : '' }} border-b border-transparent transition-colors duration-500 ease-in-out">
+
     <div class="absolute inset-0 w-full h-full overflow-hidden -z-20">
         <img id="nav-bg" src="{{ asset('images/back.webp') }}"
             class="absolute bottom-0 left-0 w-full object-cover object-center max-w-none transition-opacity duration-500 ease-in-out"
@@ -18,12 +19,27 @@
         </button>
 
         <ul id="nav-links"
-            class="hidden absolute bottom-full mb-2 left-4 right-4 rounded-2xl bg-gray-900/95 backdrop-blur-md flex-col items-center py-8 gap-8 md:text-base md:static md:bg-transparent md:backdrop-blur-none md:flex md:flex-row md:w-auto md:py-0 md:gap-10 md:mt-0 md:mb-0 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-40">
-            <li><a href="{{ route('home') }}#main-content"
-                    class="nav-link font-semibold transition-colors duration-200 block px-4 py-2 transform-gpu backface-hidden {{ request()->routeIs('home') ? 'text-white' : 'text-white/60 hover:text-white' }}">Inicio</a>
+            class="hidden absolute bottom-full mb-2 left-4 right-4 rounded-2xl bg-gray-900/95 backdrop-blur-md flex-col items-center py-4 md:py-0 gap-2 md:gap-10 md:text-base md:static md:bg-transparent md:backdrop-blur-none md:flex md:flex-row md:w-auto md:mt-0 md:mb-0 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-40">
+
+            <li class="w-full md:w-auto">
+                <a href="{{ route('home') }}#main-content"
+                    class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('home') ? 'text-white' : 'text-white/60 hover:text-white' }}">
+                    Inicio
+                </a>
             </li>
-            <li><a href="{{ route('services') }}"
-                    class="nav-link font-semibold transition-colors duration-200 block px-4 py-2 transform-gpu backface-hidden {{ request()->routeIs('services') ? 'text-white' : 'text-white/60 hover:text-white' }}">Servicios</a>
+
+            <li class="w-full md:w-auto border-t border-white/5 md:border-none">
+                <a href="{{ route('guide') }}"
+                    class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('guide') ? 'text-white' : 'text-white/60 hover:text-white' }}">
+                    Guía
+                </a>
+            </li>
+
+            <li class="w-full md:w-auto border-t border-white/5 md:border-none">
+                <a href="{{ route('shop') }}"
+                    class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('shop') ? 'text-white' : 'text-white/60 hover:text-white' }}">
+                    Tienda
+                </a>
             </li>
         </ul>
     </div>

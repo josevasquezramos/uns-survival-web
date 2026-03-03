@@ -13,9 +13,8 @@
             <h3 class="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
             <ul class="space-y-2 text-sm text-center md:text-left">
                 <li><a href="{{ route('home') }}#main-content" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
-                <li><a href="{{ route('services') }}" class="hover:text-indigo-400 transition-colors">Servicios /
-                        Tienda</a></li>
-                <li><a href="#" class="hover:text-indigo-400 transition-colors">Reglas del Servidor</a></li>
+                <li><a href="{{ route('guide') }}" class="hover:text-indigo-400 transition-colors">Guía</a></li>
+                <li><a href="{{ route('shop') }}" class="hover:text-indigo-400 transition-colors">Tienda</a></li>
             </ul>
         </div>
 

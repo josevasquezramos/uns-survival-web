@@ -10,6 +10,7 @@
     <style>
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 30px;
         }
 
         @keyframes float {
@@ -73,8 +74,7 @@
                 class="absolute inset-0 w-full object-cover object-center z-0" alt="Background" />
             <div class="absolute inset-0 bg-black/40 z-0 transition-opacity duration-500"></div>
 
-            <div
-                class="relative z-10 flex flex-col items-center justify-end pb-32 md:pb-40 h-full text-white text-center px-6 md:px-12">
+            <div class="relative z-10 flex flex-col items-center justify-center h-full pt-[35vh] md:pt-[40vh] pb-28 md:pb-16 text-white text-center px-6 md:px-12">
 
                 <h1
                     class="text-3xl md:text-5xl font-bold tracking-tight animate-float drop-shadow-xl [text-shadow:_0_4px_8px_rgba(0,0,0,0.5)] flex flex-col items-center gap-2">
@@ -99,7 +99,7 @@
                 </div>
 
                 <p
-                    class="mt-4 text-lg md:text-xl max-w-2xl text-gray-200 drop-shadow-md [text-shadow:_0_2px_4px_rgba(0,0,0,0.8)]">
+                    class="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md [text-shadow:_0_2px_4px_rgba(0,0,0,0.8)]">
                     Prepárate para un mundo donde la supervivencia es solo el comienzo.
                 </p>
             </div>
@@ -166,21 +166,34 @@
 
         const isHome = heroHeader !== null;
 
-        menuBtn.addEventListener('click', () => {
-            if (navLinks.classList.contains('hidden')) {
+        function closeMobileMenu() {
+            navLinks.classList.add('hidden');
+            navLinks.classList.remove('flex');
+        }
+
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = navLinks.classList.contains('hidden');
+            if (isHidden) {
                 navLinks.classList.remove('hidden');
                 navLinks.classList.add('flex');
             } else {
-                navLinks.classList.add('hidden');
-                navLinks.classList.remove('flex');
+                closeMobileMenu();
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navLinks.classList.contains('hidden')) {
+                if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+                    closeMobileMenu();
+                }
             }
         });
 
         links.forEach(link => {
             link.addEventListener('click', () => {
                 if (window.innerWidth < 768) {
-                    navLinks.classList.add('hidden');
-                    navLinks.classList.remove('flex');
+                    closeMobileMenu();
                 }
             });
         });
@@ -212,7 +225,7 @@
 
             const startX = winW / 2;
 
-            const startY = winW < 768 ? winH * 0.25 : winH * 0.35;
+            const startY = winW < 768 ? Math.min(winH * 0.25, 120) : Math.min(winH * 0.35, 200);
 
             const maxWidth = 1280;
             const contentPadding = winW < 768 ? 24 : 48;
