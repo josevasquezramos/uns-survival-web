@@ -12,7 +12,7 @@
         <div class="flex flex-col items-center md:items-start">
             <h3 class="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
             <ul class="space-y-2 text-sm text-center md:text-left">
-                <li><a href="{{ route('home') }}#main-content" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
+                <li><a href="{{ route('home') }}" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
                 <li><a href="{{ route('guide') }}" class="hover:text-indigo-400 transition-colors">Guía</a></li>
                 <li><a href="{{ route('shop') }}" class="hover:text-indigo-400 transition-colors">Tienda</a></li>
             </ul>

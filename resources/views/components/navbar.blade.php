@@ -22,7 +22,7 @@
             class="hidden absolute bottom-full mb-2 left-4 right-4 rounded-2xl bg-gray-900/95 backdrop-blur-md flex-col items-center py-4 md:py-0 gap-2 md:gap-10 md:text-base md:static md:bg-transparent md:backdrop-blur-none md:flex md:flex-row md:w-auto md:mt-0 md:mb-0 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-40">
 
             <li class="w-full md:w-auto">
-                <a href="{{ route('home') }}#main-content"
+                <a href="{{ route('home') }}"
                     class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('home') ? 'text-white' : 'text-white/60 hover:text-white' }}">
                     Inicio
                 </a>

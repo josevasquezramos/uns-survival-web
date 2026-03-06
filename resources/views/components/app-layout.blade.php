@@ -81,7 +81,7 @@
                     <span>¡Gran Inauguración!</span>
 
                     <span class="flex items-center gap-2 md:gap-3 text-4xl md:text-6xl mt-2">
-                        <span class="animate-color-cycle font-black transform">Sábado 7 de Marzo</span>
+                        <span class="animate-color-cycle font-black transform">Sábado 14 de Marzo</span>
                     </span>
                 </h1>
 
@@ -112,6 +112,9 @@
         {{ $slot }}
     </main>
 
+    
+    <x-donation />
+    
     <x-footer />
 
     <script>

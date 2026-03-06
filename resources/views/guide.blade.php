@@ -12,8 +12,12 @@
                 </div>
                 <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">Lo que necesitas saber
                 </h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">Aprende cómo empezar, qué
-                    comandos usar y cómo proteger tu territorio en Unsurvival.</p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">Unsurvival nació como un
+                    proyecto creado por la comunidad y para la comunidad de la <a href="https://www.uns.edu.pe/"
+                        target="_blank" class="text-indigo-600 hover:text-indigo-800">UNS</a>. Un espacio
+                    pensado para divertirnos, colaborar y construir juntos dentro de Minecraft. Aunque está inspirado en
+                    nuestra comunidad universitaria, todos son bienvenidos a unirse, explorar y formar parte de esta
+                    aventura.</p>
             </div>
 
             <div class="flex justify-center lg:justify-end w-full">
@@ -70,6 +74,10 @@
             </aside>
 
             <main class="flex-1 min-w-0 flex flex-col gap-12">
+
+                <p class="text-gray-600">Para que puedas aprovechar al máximo el servidor, a continuación encontrarás la guía con
+                    los comandos y funciones disponibles, que te ayudarán a moverte, proteger tus construcciones y usar
+                    todas las herramientas.</p>
 
                 <section id="empezar" class="scroll-mt-24">
                     <div class="flex items-center gap-3 mb-6">
