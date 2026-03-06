@@ -177,7 +177,7 @@
             </p>
         </div>
 
-        <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
+        <div class="relative w-full aspect-square md:aspect-video rounded-3xl overflow-hidden shadow-2xl bg-gray-900">
 
             @for ($i = 1; $i <= 5; $i++)
                 <img src="{{ asset('images/gallery/' . $i . '.webp') }}"
@@ -188,7 +188,7 @@
             <div id="prev-area"
                 class="absolute left-0 top-0 w-1/2 h-full z-20 cursor-pointer group/left flex items-center justify-start p-4 md:p-8">
                 <div
-                    class="bg-black/30 text-white p-3 rounded-full backdrop-blur-sm opacity-0 group-hover/left:opacity-100 transition-opacity duration-300">
+                    class="bg-black/30 text-white p-3 rounded-full backdrop-blur-sm opacity-60 md:opacity-0 md:group-hover/left:opacity-100 transition-opacity duration-300">
                     <x-heroicon-o-chevron-left class="w-6 h-6 md:w-8 md:h-8" />
                 </div>
             </div>
@@ -196,7 +196,7 @@
             <div id="next-area"
                 class="absolute right-0 top-0 w-1/2 h-full z-20 cursor-pointer group/right flex items-center justify-end p-4 md:p-8">
                 <div
-                    class="bg-black/30 text-white p-3 rounded-full backdrop-blur-sm opacity-0 group-hover/right:opacity-100 transition-opacity duration-300">
+                    class="bg-black/30 text-white p-3 rounded-full backdrop-blur-sm opacity-60 md:opacity-0 md:group-hover/right:opacity-100 transition-opacity duration-300">
                     <x-heroicon-o-chevron-right class="w-6 h-6 md:w-8 md:h-8" />
                 </div>
             </div>
