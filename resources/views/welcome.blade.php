@@ -48,6 +48,25 @@
                         Última Versión
                     </span>
                 </div>
+
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 mt-5">
+                    <span class="text-gray-600 font-medium text-lg flex items-center gap-2">
+                        Multiplataforma
+                    </span>
+                    <div class="flex gap-2">
+                        <span
+                            class="px-3 py-1 text-sm font-bold bg-red-100 text-red-700 border border-red-200 rounded-lg shadow-sm flex items-center gap-1.5 cursor-default">
+                            <x-heroicon-s-computer-desktop class="w-4 h-4 text-red-500" />
+                            Java
+                        </span>
+
+                        <span
+                            class="px-3 py-1 text-sm font-bold bg-slate-100 text-slate-700 border border-slate-200 rounded-lg shadow-sm flex items-center gap-1.5 cursor-default">
+                            <x-heroicon-s-device-phone-mobile class="w-4 h-4 text-slate-500" />
+                            Bedrock
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <div class="md:w-1/2 flex justify-center md:justify-end w-full">
