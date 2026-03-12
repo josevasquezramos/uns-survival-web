@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'minecraft' => [
+            'driver' => 'session',
+            'provider' => 'minecraft_users',
+        ],
     ],
 
     /*
@@ -63,6 +67,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
+        ],
+        
+        'minecraft_users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Minecraft\AuthMeUser::class,
         ],
 
         // 'users' => [
