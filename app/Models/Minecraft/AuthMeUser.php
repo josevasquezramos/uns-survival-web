@@ -2,6 +2,7 @@
 
 namespace App\Models\Minecraft;
 
+use App\Models\Order;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class AuthMeUser extends Authenticatable
@@ -52,6 +53,16 @@ class AuthMeUser extends Authenticatable
     public function rank()
     {
         return $this->hasOne(LuckpermsPlayer::class, 'username', 'realname');
+    }
+
+    public function purchases()
+    {
+        return $this->hasMany(Order::class, 'buyer_id');
+    }
+
+    public function giftsReceived()
+    {
+        return $this->hasMany(Order::class, 'target_id');
     }
 
     public function skinInfo()
