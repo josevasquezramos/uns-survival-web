@@ -14,6 +14,13 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
+        // DONACIÓN
+        Product::create([
+            'name' => 'Donación Libre',
+            'price' => 0.00,
+            'type' => ProductType::DONATION,
+        ]);
+
         // RANGOS
         Product::create([
             'name' => 'Rango Egresado Temporal',
@@ -53,13 +60,6 @@ class ProductSeeder extends Seeder
             'name' => 'Ticket: Bingo',
             'price' => 1.00,
             'type' => ProductType::EVENT,
-        ]);
-
-        // DONACIÓN
-        Product::create([
-            'name' => 'Donación Libre (Café para el Admin)',
-            'price' => 0.00,
-            'type' => ProductType::DONATION,
         ]);
     }
 }

@@ -42,9 +42,13 @@
                     class="flex items-center gap-3 px-3 py-2 font-medium rounded-md {{ request()->routeIs('dashboard') ? 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white' }} transition-colors">
                     <x-heroicon-o-home class="w-5 h-5" /> Inicio
                 </a>
-                <a href="#"
-                    class="flex items-center gap-3 px-3 py-2 font-medium rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <x-heroicon-o-shopping-cart class="w-5 h-5" /> Tienda
+                <a href="{{ route('shop.index') }}"
+                    class="flex items-center gap-3 px-3 py-2 font-medium rounded-md {{ request()->routeIs('shop.index') ? 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800' }} transition-colors">
+                    <x-heroicon-o-shopping-bag class="w-5 h-5" /> Tienda
+                </a>
+                <a href="{{ route('orders.index') }}"
+                    class="flex items-center gap-3 px-3 py-2 font-medium rounded-md {{ request()->routeIs('orders.*') ? 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800' }} transition-colors">
+                    <x-heroicon-o-banknotes class="w-5 h-5" /> Mis Pagos
                 </a>
             </nav>
 

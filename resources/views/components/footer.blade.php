@@ -14,7 +14,7 @@
             <ul class="space-y-2 text-sm text-center md:text-left">
                 <li><a href="{{ route('home') }}" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
                 <li><a href="{{ route('guide') }}" class="hover:text-indigo-400 transition-colors">Guía</a></li>
-                <li><a href="{{ route('shop') }}" class="hover:text-indigo-400 transition-colors">Tienda</a></li>
+                <li><a href="{{ route('login') }}" class="hover:text-indigo-400 transition-colors">Ingresar</a></li>
             </ul>
         </div>
 

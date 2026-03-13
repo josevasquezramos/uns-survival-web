@@ -43,7 +43,7 @@
                         ¡Beneficios Exclusivos!
                     </h4>
                     <p class="text-gray-700 text-sm text-center">
-                        Al donar por <span class="font-bold text-gray-900">Yape</span> o <span class="font-bold text-gray-900">Plin</span>, asegúrate de poner tu <span class="text-indigo-600 font-bold">nametag</span> de Minecraft en el mensaje.
+                        No olvides <a href="{{ route('orders.create') }}" class="text-blue-600 hover:text-blue-800 underline">registrar</a> tu pago.
                     </p>
                     <ul class="mt-3 text-sm text-gray-600 space-y-2">
                         <li class="flex items-center gap-2">
@@ -52,7 +52,7 @@
                         </li>
                         <li class="flex items-center gap-2">
                             <x-heroicon-s-gift class="w-4 h-4 text-pink-500" />
-                            Recibirás recompensas especiales los primeros días.
+                            Recibirás recompensas especiales.
                         </li>
                     </ul>
                 </div>

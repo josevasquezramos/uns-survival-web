@@ -14,6 +14,7 @@ class Order extends Model
         'product_id',
         'target_id',
         'amount_paid',
+        'payment_datetime',
         'receipt_image',
         'status',
         'admin_notes',
@@ -21,6 +22,7 @@ class Order extends Model
 
     protected $casts = [
         'status' => OrderStatus::class,
+        'payment_datetime' => 'datetime',
     ];
 
     public function product()
