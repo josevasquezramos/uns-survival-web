@@ -15,7 +15,6 @@
                             <h3 class="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400">{{ $rango->name }}</h3>
                             <div class="mt-2 mb-6 text-slate-900 dark:text-white">
                                 <span class="text-3xl font-bold">S/ {{ number_format($rango->price, 2) }}</span>
-                                <span class="text-sm text-slate-500 dark:text-slate-400">/ único</span>
                             </div>
                         </div>
                         <a href="{{ route('orders.create', ['product_id' => $rango->id, 'amount' => $rango->price]) }}" 
