@@ -72,6 +72,16 @@
     .ts-dropdown .option { padding: 0.5rem 0.75rem; cursor: pointer; transition: background-color 0.1s; }
     .ts-dropdown .option.active, .ts-dropdown .option:hover { background-color: #f1f5f9; color: #0f172a; }
     .dark .ts-dropdown .option.active, .dark .ts-dropdown .option:hover { background-color: rgba(255, 255, 255, 0.05); color: #f8fafc; }
+
+    .dark .ts-wrapper.input-active .ts-control,
+    .dark .ts-wrapper.dropdown-active .ts-control {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: #f8fafc;
+    }
+
+    .dark .ts-control > input {
+        color: #f8fafc;
+    }
 </style>
 
 <div class="max-w-2xl mx-auto">
@@ -199,7 +209,7 @@
             labelField: 'username',
             searchField: 'username',
             plugins: ['dropdown_input'],
-            create: true, 
+            create: false, 
             load: function(query, callback) {
                 if (!query.length) return callback();
                 fetch(`/api/users/search?q=${encodeURIComponent(query)}`)
