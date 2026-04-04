@@ -1,14 +1,14 @@
-<div class="fixed bottom-4 left-4 md:left-auto md:right-4 z-50 flex flex-col items-start md:items-end group" id="ghast-container">
+<div class="fixed bottom-4 left-4 z-50 flex flex-col items-start group" id="ghast-container">
     <div id="ghast-tooltip" class="mb-2 px-4 py-2 bg-gray-900/90 backdrop-blur-sm text-white text-sm font-medium rounded-lg shadow-lg opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 pointer-events-none transform origin-bottom flex flex-col items-center text-center">
         <span>¡No dejes que el Ghast llore!</span>
         <span class="text-sm text-red-400 flex items-center gap-2 mt-1">
             Apoya al servidor <x-heroicon-s-heart class="w-4 h-4 text-red-500" />
         </span>
-        <div class="absolute -bottom-2 left-6 md:left-auto md:right-8 w-0 h-0 border-l-[6px] border-l-transparent border-t-[8px] border-t-gray-900/90 border-r-[6px] border-r-transparent"></div>
+        <div class="absolute -bottom-2 left-6 w-0 h-0 border-l-[6px] border-l-transparent border-t-[8px] border-t-gray-900/90 border-r-[6px] border-r-transparent"></div>
     </div>
 
     <button onclick="toggleDonationModal(true)" class="relative focus:outline-none hover:scale-110 transition-transform duration-300 animate-float cursor-pointer">
-        <img src="{{ asset('images/ghast.gif') }}" alt="Donar al servidor" class="relative w-16 h-16 md:w-20 md:h-20 object-contain">
+        <img src="{{ asset('images/ghast.gif') }}" alt="Donar al servidor" class="relative w-16 h-16 md:w-20 md:h-20 object-contain -scale-x-100">
     </button>
 </div>
 

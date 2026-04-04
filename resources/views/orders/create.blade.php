@@ -125,7 +125,7 @@
 
             <div id="contenedor_regalo" class="transition-all duration-300">
                 <label for="target_username" class="block text-sm font-medium mb-2">Regalar a (Opcional)</label>
-                <select name="target_username" id="target_username" placeholder="Buscar o escribir usuario...">
+                <select name="target_username" id="target_username" placeholder="Buscar usuario...">
                     <option value="">-- Es para mi propia cuenta --</option>
                     @foreach($users as $user)
                         <option value="{{ $user->username }}">{{ $user->username }}</option>

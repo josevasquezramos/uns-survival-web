@@ -227,7 +227,7 @@
                                 {{ $hero->username }}
                             </h3>
                             <p class="text-sm text-indigo-200/70 w-full truncate font-medium mt-1" title="{{ $hero->name }}">
-                                {{ $hero->name }}
+                                {{ $hero->realname }}
                             </p>
                         </div>
                     @endforeach

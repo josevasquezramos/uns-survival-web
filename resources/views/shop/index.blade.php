@@ -190,7 +190,7 @@
                                     <div class="bg-slate-50 dark:bg-slate-800/60 p-4 rounded-xl border-l-4 {{ $borderColor }}">
                                         <p class="font-semibold text-slate-800 dark:text-white mb-1">Comparativa vs. jugador sin
                                             rango</p>
-                                        <p class="text-sm">Un jugador base tiene solo <strong>3 homes</strong>, <strong>4
+                                        <p class="text-sm">Un jugador normal tiene solo <strong>3 homes</strong>, <strong>4
                                                 protecciones</strong>, puede tener <strong>3 trabajos activos</strong> y no recibe
                                             ningun porcentaje de bonus. Con esta membresia lo superas desde el primer dia.</p>
                                     </div>
@@ -565,7 +565,7 @@
                     Eventos Activos
                 </h2>
                 @if($eventos->isEmpty())
-                    <p class="text-slate-500 dark:text-slate-400 text-sm bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl">No hay
+                    <p class="border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 text-sm bg-white dark:bg-slate-800/50 p-4 rounded-xl">No hay
                         eventos disponibles en este momento.</p>
                 @else
                     <div class="grid grid-cols-1 gap-4">
@@ -594,7 +594,7 @@
                     Items Especiales
                 </h2>
                 @if($items->isEmpty())
-                    <p class="text-slate-500 dark:text-slate-400 text-sm bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl">No hay
+                    <p class="border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 text-sm bg-white dark:bg-slate-800/50 p-4 rounded-xl">No hay
                         items en la tienda actualmente.</p>
                 @else
                     <div class="grid grid-cols-1 gap-4">

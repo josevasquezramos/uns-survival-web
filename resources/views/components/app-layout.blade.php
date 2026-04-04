@@ -78,11 +78,7 @@
 
                 <h1
                     class="text-3xl md:text-5xl font-bold tracking-tight animate-float drop-shadow-xl [text-shadow:_0_4px_8px_rgba(0,0,0,0.5)] flex flex-col items-center gap-2">
-                    <span>¡Gran Inauguración!</span>
-
-                    <span class="flex items-center gap-2 md:gap-3 text-4xl md:text-6xl mt-2">
-                        <span class="animate-color-cycle font-black transform">Sábado 14 de Marzo</span>
-                    </span>
+                    <span>¡Bienvenido!</span>
                 </h1>
 
                 <div
@@ -111,13 +107,12 @@
     <main class="relative z-10 bg-gray-50 flex-grow {{ !request()->routeIs('home') ? 'pt-10' : '' }}" id="main-content">
         {{ $slot }}
     </main>
-
     
     <x-donation />
-    
     <x-footer />
 
     <script>
+        // ... (Tu lógica de JS de copiado y logo se mantiene igual)
         function copyServerIP() {
             const ip = document.getElementById('server-ip').innerText;
             const btn = document.getElementById('copy-btn');
