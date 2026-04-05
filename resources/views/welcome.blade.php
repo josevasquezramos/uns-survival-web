@@ -18,7 +18,7 @@
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
                     <span class="text-gray-600 font-medium text-lg">Únete a la comunidad</span>
                     <div class="flex items-center gap-3">
-                        <a href="https://discord.gg/uUMM4qmEV" target="_blank" rel="noopener noreferrer"
+                        <a href="https://discord.gg/cjedJVFtb" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-500 hover:-translate-y-0.5 transition-all"
                             title="Discord Oficial">
                             <x-fab-discord class="w-5 h-5" />
