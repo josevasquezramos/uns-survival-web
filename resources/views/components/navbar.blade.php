@@ -31,10 +31,17 @@
             <li class="w-full md:w-auto border-t border-white/5 md:border-none">
                 <a href="{{ route('guide') }}"
                     class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('guide') ? 'text-white' : 'text-white/60 hover:text-white' }}">
-                    Guía
+                    Acerca de
                 </a>
             </li>
 
+            <li class="w-full md:w-auto border-t border-white/5 md:border-none">
+                <a href="{{ route('noticias.index') }}"
+                    class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('noticias.*') ? 'text-white' : 'text-white/60 hover:text-white' }}">
+                    Noticias
+                </a>
+            </li>
+            
             <li class="w-full md:w-auto border-t border-white/5 md:border-none">
                 <a href="{{ route('login') }}"
                     class="nav-link font-semibold transition-colors duration-200 block w-full py-4 px-6 text-center md:py-2 md:px-4 {{ request()->routeIs('login') ? 'text-white' : 'text-white/60 hover:text-white' }}">

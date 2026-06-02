@@ -283,28 +283,95 @@
         </div>
     </section>
 
-    <section class="relative bg-gray-900 overflow-hidden">
-        <div
-            class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1607513746994-6b58e70eb922?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center">
-        </div>
-        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-indigo-900/80"></div>
+    <section class="relative bg-gray-900 overflow-hidden mb-16">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-indigo-900"></div>
 
-        <div
-            class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center justify-between z-10">
+        <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 flex flex-col md:flex-row items-center justify-between z-10">
             <div class="md:w-2/3 text-center md:text-left mb-8 md:mb-0">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">La aventura te espera dentro</h2>
                 <p class="text-lg text-indigo-100 max-w-2xl">
-                    Ya sea tu primera vez en un servidor survival o seas un veterano de Minecraft, en Uns Survival
-                    encontrarás una comunidad lista para darte la bienvenida.
+                    Ya sea tu primera vez en un servidor survival o seas un veterano de Minecraft, asegúrate de conocer nuestra guía y reglas para disfrutar al máximo con la comunidad.
                 </p>
             </div>
             <div class="md:w-1/3 flex justify-center md:justify-end">
-                <a href="#hero-header" onclick="window.scrollTo(0, 0);"
+                <a href="{{ route('guide') }}"
                     class="px-8 py-4 bg-indigo-500 hover:bg-indigo-400 text-white font-bold rounded-xl shadow-lg transition-transform transform hover:scale-105 flex items-center gap-2">
-                    <x-heroicon-s-play class="w-6 h-6" />
-                    ¡Comenzar a jugar!
+                    <x-heroicon-s-book-open class="w-6 h-6" />
+                    Leer guía y reglas
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 relative z-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">El Servidor Survival Definitivo en Perú y Latam</h2>
+            <p class="text-lg text-gray-600">
+                Descubre por qué somos la mejor opción para tu próxima aventura en Minecraft.
+            </p>
+        </div>
+        <div class="bg-white/50 backdrop-blur-sm border border-gray-200 p-8 md:p-12 rounded-3xl shadow-sm">
+            <div class="space-y-4 text-gray-700 text-lg leading-relaxed">
+                <p>
+                    Unsurvival no es solo un servidor de Minecraft más; es un proyecto nacido en Perú, creado por y para la comunidad universitaria de la <a href="https://www.uns.edu.pe/" target="_blank" class="text-indigo-600 hover:text-indigo-800">UNS</a>, pero abierto a jugadores de todo el mundo. Nuestro objetivo principal es ofrecer una experiencia de supervivencia pura y equilibrada, donde tanto los jugadores de la edición Java como los de Bedrock puedan coexistir y forjar sus propias historias sin barreras.
+                </p>
+                <p>
+                    Entendemos lo frustrante que puede ser perder horas de progreso. Por eso, hemos implementado un sistema de protección de zonas intuitivo que te permite construir con total tranquilidad. Además, nuestra economía dinámica recompensará tu tiempo de juego, permitiéndote comerciar de forma segura, participar en subastas o simplemente relajarte en nuestros minijuegos del lobby. Únete hoy y descubre por qué somos la mejor opción para tu próxima aventura en Minecraft.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 md:px-12 py-16 relative z-10">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Preguntas Frecuentes</h2>
+            <p class="text-lg text-gray-600">
+                Todo lo que necesitas saber antes de empezar tu aventura en Unsurvival.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <x-heroicon-s-question-mark-circle class="w-7 h-7 text-indigo-500" />
+                    ¿Necesito Minecraft Premium para jugar?
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    No, Unsurvival es un servidor No-Premium (Cracked). Cualquier jugador puede entrar y disfrutar de la experiencia completa. Contamos con un sistema de registro seguro (/register y /login) para proteger tu cuenta y tu progreso dentro del servidor.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <x-heroicon-s-device-phone-mobile class="w-7 h-7 text-indigo-500" />
+                    ¿Cómo entro desde mi celular (Bedrock)?
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Gracias a nuestro sistema multiplataforma (Geyser), los jugadores de Bedrock (Celulares, Consolas, Windows 10) pueden jugar con los de Java. Solo necesitas agregar la IP <strong>play.unsurvival.games</strong> con el puerto predeterminado <strong>19132</strong> en tu lista de servidores.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <x-heroicon-s-shield-exclamation class="w-7 h-7 text-indigo-500" />
+                    ¿Pueden robar mis cosas o destruir mi casa?
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    No, si utilizas nuestro sistema de protección. Al conseguir una Piedra de Protección y colocarla en el suelo, crearás un área segura donde solo tú (y los amigos a los que les des permiso) podrán construir, abrir cofres o interactuar.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
+                    <x-heroicon-s-currency-dollar class="w-7 h-7 text-indigo-500" />
+                    ¿El servidor es "Pay to Win" (Pagar para ganar)?
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                    En absoluto. Las donaciones de nuestros Héroes del Servidor nos ayudan a mantener la infraestructura en línea, pero todas las ventajas que se otorgan son estéticas o de conveniencia. El equipo, los recursos y la economía se consiguen jugando.
+                </p>
+            </div>
+
         </div>
     </section>
 

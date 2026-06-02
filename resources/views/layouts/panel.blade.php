@@ -14,6 +14,8 @@
             document.documentElement.classList.remove('dark');
         }
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3626074285212224"
+     crossorigin="anonymous"></script>
 </head>
 
 <body

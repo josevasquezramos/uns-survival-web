@@ -22,6 +22,26 @@ Route::middleware('guest:minecraft')->group(function () {
     Route::post('/login', [AuthController::class, 'login']);
 });
 
+Route::get('/cookies', function () {
+    return view('legal.cookies');
+})->name('cookies');
+
+Route::get('/terminos', function () {
+    return view('legal.terminos');
+})->name('terms');
+
+Route::get('/noticias', function () {
+    return view('noticias.index');
+})->name('noticias.index');
+
+Route::get('/noticias/inauguracion', function () {
+    return view('noticias.inauguracion');
+})->name('noticias.inauguracion');
+
+Route::get('/noticias/bingo', function () {
+    return view('noticias.bingo');
+})->name('noticias.bingo');
+
 Route::middleware('auth:minecraft')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
